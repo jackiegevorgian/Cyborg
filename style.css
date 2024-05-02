@@ -1,0 +1,828 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1f2122;
+
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background-color: #1f2122;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 50px;
+    position: relative;
+}
+
+header>div {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+header>div:last-child{
+    display: none;
+}
+
+.Logo_Box {
+    width: 250px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.Logo_Box a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://templatemo.com/templates/templatemo_579_cyborg_gaming/assets/images/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.Search_Box {
+    width: 200px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.Search_Box i {
+    position: absolute;
+    left: -8%;
+    color: gray;
+}
+
+.Search_Box input {
+    padding: 10px 20px 10px 40px;
+    border-radius: 30px;
+    border: 3px solid gray;
+    outline: none;
+    font-size: 18px;
+    transition: .4s;
+    background-color: rgb(39, 39, 39);
+    color: white;
+}
+
+.Search_Box input:hover {
+    background-color: rgb(49, 49, 49);
+}
+
+.Search_Box input:focus {
+    border-color: #e75e8d;
+}
+
+.Menu {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Menu ul {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.Menu li {
+    padding: 10px 20px;
+    /* background-color: aliceblue; */
+    list-style: none;
+}
+
+.Menu a {
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+    color: gray;
+    font-weight: 500;
+    transition: 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.Menu li:last-child a {
+    padding: 10px 15px;
+    border-radius: 30px;
+    background-color: #27292a;
+}
+
+.Menu a:hover {
+    color: #e75e8d;
+}
+
+.Menu li:last-child a:hover {
+    background-color: #e75e8d;
+    color: #fff;
+}
+
+.Menu li:last-child img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#main {
+    width: 90%;
+    height: auto;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #27292a;
+    border-radius: 15px;
+    gap: 60px;
+}
+
+.Banner_Box {
+    width: 100%;
+    height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url(./banner-bg.jpg);
+    border-radius: 15px;
+}
+
+.Banner_Info {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+    padding: 35px;
+}
+
+.Banner_Info h3 {
+    color: white;
+}
+
+.Banner_Info span {
+    color: #e75e8d;
+}
+
+.Banner_Info button {
+    background-color: #e75e8d;
+    color: #fff;
+    padding: 10px 27px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.Banner_Info button:hover {
+    background-color: #fff;
+    color: #e75e8d;
+}
+
+.Populars_Area_Container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1f2122;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 15px;
+}
+
+.Area_Them_Box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 35px;
+}
+
+.Area_Them_Box h2 {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.Area_Them_Box span {
+    text-decoration: none;
+    color: #ec6090;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.Populars_Area_Box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.PopularArea {
+    border-radius: 15px;
+    width: 230px;
+    height: auto;
+    padding: 40px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #27292a;
+}
+
+.Area_Img_Box {
+    width: 100%;
+    height: 130px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.Area_Img_Box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Populars_Area_Info {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.Populars_Area_Info div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Populars_Area_Info div:first-child h4 {
+    color: white;
+}
+
+.Populars_Area_Info div:first-child i {
+    color: gold;
+}
+
+.Populars_Area_Info div:last-child h4 {
+    color: #666;
+    font-size: 15px;
+}
+
+.Populars_Area_Info div:last-child i {
+    color: #e75e8d;
+}
+
+.Area_Name_Box h4 {
+    color: #fff;
+}
+
+.Populars_Area_Info span {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.Area_Genre_Box h4 {
+    color: #666;
+}
+
+.Populars_Area_Container button {
+    padding: 12px 30px;
+    color: #fff;
+    background-color: #e75e8d;
+    font-size: 15px;
+    border-radius: 27px;
+    border: none;
+    margin: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    transform: translateY(45px);
+}
+
+.Populars_Area_Container button:hover {
+    color: #e75e8d;
+    background-color: #fff;
+}
+
+
+.Library_Container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1f2122;
+    padding: 40px;
+    gap: 20px;
+    border-radius: 15px;
+}
+
+.LibraryText_Box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    font-size: 25px;
+}
+
+.LibraryText_Box h2 {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.LibraryText_Box span {
+    text-decoration: none;
+    color: #ec6090;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.Library_Container>div>button {
+    padding: 12px 30px;
+    color: #fff;
+    background-color: #e75e8d;
+    font-size: 15px;
+    border-radius: 27px;
+    border: none;
+    margin: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    transform: translateY(65px);
+}
+
+.Library_Container>div>button:hover {
+    color: #e75e8d;
+    background-color: #fff;
+}
+
+
+.Library_Box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.Library {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.096);
+    padding: 20px 0;
+}
+
+.Library_Img_Box {
+    width: 95px;
+    height: 85px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.Library_Img_Box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Library button {
+    padding: 15px 40px;
+    border-radius: 30px;
+    cursor: pointer;
+    color: #666;
+    border: 1px solid #666;
+    background: transparent;
+    transition: .5s;
+}
+
+.Library:nth-child(2) button {
+    border: solid 1px #ec6090;
+    color: #ec6090;
+}
+
+.Library:nth-child(2) button:hover {
+    background-color: #fff;
+    color: #ec6090;
+    border-color: #fff;
+}
+
+.LibraryArea_Info {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.LibraryArea_Info h4 {
+    color: #fff;
+}
+
+.LibraryArea_Info h5 {
+    color: #666;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+    gap: 15px;
+}
+
+footer p {
+    color: #fff;
+    font-weight: 300;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    transition: .5s;
+}
+
+footer a:hover {
+    color: #e75e8d;
+}
+
+@media (min-width:1024px) and (max-width:1200px) {
+    .Logo_Box a {
+        height: 95%;
+
+    }
+
+    .Menu li {
+        padding: 10px 11px;
+    }
+
+    .Search_Box input {
+        padding: 10px 16px 10px 13px;
+        font-size: 14px;
+        border: none;
+    }
+
+    .Search_Box i {
+        left: 8%;
+
+    }
+}
+
+@media(min-width:320px) and (max-width:1024px) {
+    main {
+      transform: translateY(23px);
+      padding: 50px 20px;
+    }
+  
+    header>div:last-child {
+      display: block;
+      border: none;
+    }
+  
+    #Menu_Button i {
+      color: #ec6090;
+      background-color: #fff;
+      padding: 13px 30px;
+      font-size: 20px;
+    }
+  
+    header {
+      background-color: #fff;
+      padding: 0;
+  
+      div {
+        &:nth-child(3) {
+          display: block;
+        }
+      }
+    }
+    .Search_Box{
+        display: none;
+      }
+  
+    .Menu {
+      position: absolute;
+      top: 100%;
+      height: 0;
+      width: 100%;
+      left: 0;
+      overflow: hidden;
+      transition: .4s;
+      background-color: #fff;
+      z-index: 9999999999;
+      border-top: 1px solid rgba(128, 128, 128, 0.281);
+    }
+  
+    .Menu ul {
+      flex-direction: column;
+    }
+  
+    .Logo_Box {
+      width: 120px;
+    }
+  
+    .Logo_Box a {
+      background-position: center;
+      padding: 10px 20px;
+    }
+  }
+
+@media (min-width:768px) and (max-width:1024px) {
+
+    .Banner_Box {
+        width: 550px;
+        height: 420px;
+    }
+
+    .Banner_Info {
+        gap: 25px;
+    }
+
+    .Banner_Info h3 {
+        font-size: 21px;
+    }
+
+    .Banner_Info h1 {
+        color: #fff;
+        font-size: 40px;
+    }
+
+    .Search_Box {
+        display: none;
+    }
+
+    .Menu li:last-child a {
+        background-color: #ec60919a;
+        color: white;
+        transition: 0.4s;
+    }
+
+    .Menu li:last-child a:hover {
+        background-color: white;
+        color: #ec6090;
+    }
+
+    .LibraryArea_Info {
+        flex-wrap: wrap;
+    }
+
+    .Library_Container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .Library_Container>div>button {
+        transform: translateY(47px);
+    }
+
+    .LibraryText_Box h2 {
+        font-size: 30px;
+    }
+
+    .LibraryText_Box span {
+        font-size: 35px;
+    }
+}
+
+@media (min-width:552px) and (max-width:768px) {
+
+    .Banner_Box {
+        width: 465px;
+        height: 380px;
+    }
+
+    .Banner_Info {
+        gap: 25px;
+        display: flex;
+        align-items: center;
+    }
+
+    .Banner_Info span {
+        font-size: 30px;
+    }
+
+    .Banner_Info h3 {
+        font-size: 21px;
+
+    }
+
+    .Banner_Info h1 {
+        color: #fff;
+        font-size: 30px;
+    }
+
+    .Search_Box {
+        display: none;
+    }
+
+    .Menu li:last-child a {
+        background-color: #ec60919a;
+        color: white;
+        transition: 0.4s;
+    }
+
+    .Menu li:last-child a:hover {
+        background-color: white;
+        color: #ec6090;
+    }
+
+    .Library {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .LibraryArea_Info {
+        flex-wrap: wrap;
+    }
+
+    .Library_Container {
+        width: 100%;
+        padding: 15px;
+        flex-wrap: wrap;
+    }
+
+    .Library_Container>div>button {
+        transform: translateY(47px);
+    }
+
+    .LibraryText_Box h2 {
+        font-size: 30px;
+    }
+
+    .LibraryText_Box span {
+        font-size: 35px;
+    }
+
+    .Area_Them_Box {
+        width: 375px;
+    }
+
+    .Populars_Area_Container {
+        width: 100%;
+    }
+
+    .PopularArea {
+        width: 185px;
+        padding: 15px;
+    }
+
+    footer {
+        padding: 30px 40px;
+    }
+}
+
+@media (min-width:320px) and (max-width:552px) {
+    #main {
+        padding: 20px;
+        transform: translateY(23px);
+    }
+
+    .Banner_Box {
+        width: 100%;
+        height: 310px;
+    }
+
+    .Banner_Info {
+        gap: 25px;
+        display: flex;
+        align-items: center;
+    }
+
+    .Banner_Info span {
+        font-size: 30px;
+    }
+
+    .Banner_Info h3 {
+        font-size: 21px;
+
+    }
+
+    .Banner_Info h1 {
+        color: #fff;
+        font-size: 30px;
+    }
+
+    .Search_Box {
+        display: none;
+    }
+
+    .Menu li:last-child a {
+        background-color: #ec60919a;
+        color: white;
+        transition: 0.4s;
+    }
+
+    .Menu li:last-child a:hover {
+        background-color: white;
+        color: #ec6090;
+    }
+
+    .Library {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .LibraryArea_Info {
+        flex-wrap: wrap;
+    }
+
+    .Library_Container {
+        width: 100%;
+        padding: 15px;
+        flex-wrap: wrap;
+    }
+
+    .Library_Container>div>button {
+        transform: translateY(47px);
+    }
+
+    .LibraryText_Box h2 {
+        font-size: 30px;
+    }
+
+    .LibraryText_Box span {
+        font-size: 35px;
+    }
+
+    .Area_Them_Box {
+        width: 100%;
+        padding: 0;
+    }
+
+    .Area_Them_Box span {
+        font-size: 16px;
+    }
+
+    .Area_Them_Box h2 {
+        font-size: 16px;
+    }
+
+    .Populars_Area_Container {
+        width: 100%;
+    }
+
+
+    footer {
+        padding: 30px 40px;
+    }
+
+    footer p {
+        text-align: center;
+    }
+
+    .Populars_Area_Container button {
+        transform: translateY(-45px);
+    }
+
+}

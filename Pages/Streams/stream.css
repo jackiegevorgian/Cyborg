@@ -1,0 +1,881 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1f2122;
+  gap: 20px;
+}
+
+main {
+  width: 90%;
+  height: auto;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1c1c1d;
+  gap: 50px;
+  border-radius: 20px;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  background-color: #1f2122;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 50px;
+  position: relative;
+}
+
+header>div {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+header>div:last-child {
+  display: none;
+}
+
+.Logo_Box {
+  width: 250px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.Logo_Box a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://templatemo.com/templates/templatemo_579_cyborg_gaming/assets/images/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.Search_Box {
+  width: 200px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.Search_Box i {
+  position: absolute;
+  left: -8%;
+  color: gray;
+}
+
+.Search_Box input {
+  padding: 10px 20px 10px 40px;
+  border-radius: 30px;
+  border: 3px solid gray;
+  outline: none;
+  font-size: 18px;
+  transition: .4s;
+  background-color: rgb(39, 39, 39);
+  color: white;
+}
+
+.Search_Box input:hover {
+  background-color: rgb(49, 49, 49);
+}
+
+.Search_Box input:focus {
+  border-color: #e75e8d;
+}
+
+.Menu {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Menu ul {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.Menu li {
+  padding: 10px 20px;
+  /* background-color: aliceblue; */
+  list-style: none;
+}
+
+.Menu a {
+  display: block;
+  font-size: 15px;
+  text-decoration: none;
+  color: gray;
+  font-weight: 500;
+  transition: 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.Menu li:last-child a {
+  padding: 10px 15px;
+  border-radius: 30px;
+  background-color: #27292a;
+}
+
+.Menu a:hover {
+  color: #e75e8d;
+}
+
+.Menu li:last-child a:hover {
+  background-color: #e75e8d;
+  color: #fff;
+}
+
+.Menu li:last-child img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.Slider-Downloads {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.slider {
+  width: 600px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  border-radius: 20px;
+  padding: 20px;
+  overflow: hidden;
+  background-color: rgb(41, 39, 39);
+}
+
+.slider .slides {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 15px;
+  transition: transform 1s ease-in-out;
+}
+
+.slider .slides .Feauture_Ggame {
+  width: 300px;
+  height: auto;
+  box-sizing: border-box;
+  padding: 20px;
+  flex: 0 0 45%;
+  background-color: #27292a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.FGamesImg_Box {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.FGamesImg_Box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.FGames_Info {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.FGames_Info>div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.FGames_Info div:first-child h3 {
+  color: #fff;
+  font-size: 15px;
+}
+
+.FGames_Info div:last-child h3 {
+  color: #666;
+  font-size: 15px;
+}
+
+.FGames_Info div:first-child i {
+  color: gold;
+}
+
+.FGames_Info div:last-child i {
+  color: #e75e8d;
+}
+
+.FGames_Info span {
+  color: #fff;
+}
+
+
+.FeauturedGames_Theme {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+
+
+}
+
+.FeauturedGames_Theme h3 {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.FeauturedGames_Theme span {
+  text-decoration: none;
+  color: #ec6090;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.TopStreamers_Container {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: rgb(41, 39, 39);
+}
+
+.TopStr_Elem {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 1px solid #e2e2e2;
+  padding: 20px 0;
+  border-radius: 5px;
+
+}
+
+.TopStr_Info {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+.TopStr_Info>div:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.TopStr_Elem>div:last-child {
+  justify-content: space-between;
+}
+
+.TopStr_Theme {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+.TopStreamers_Box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.TopStr_Theme h1 {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.TopStr_Theme span {
+  text-decoration: none;
+  color: #ec6090;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.TopStr_Elem :first-child span {
+  color: #fff;
+  font-weight: 700;
+}
+
+.TopStr_Elem h3 {
+  color: #ec6090;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.TopStr_Elem img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.TopStrButton_Cont button {
+  background-color: #ec6090;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 20px;
+  position: relative;
+  border: none;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.TopStrButton_Cont button:hover {
+  background-color: #fff;
+  color: #ec6090;
+}
+
+.MostPopularLiveStream_Container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  gap: 15px;
+  background-color: rgb(41, 39, 39);
+}
+
+.MPLiveStream_Elem {
+  width: 260px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  gap: 15px;
+}
+
+.MostPopularLiveStream_Box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.MPLiveStImg_Box {
+  width: 200px;
+  height: auto;
+  overflow: hidden;
+  border-radius: 15%;
+  position: relative;
+
+}
+
+.MPLiveStImg_Box img {
+  width: 210px;
+  height: 190px;
+  object-fit: cover;
+}
+
+.MPLiveStImg_Box>div {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  position: absolute;
+  left: 0;
+  top: 70%;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.MPLiveStImg_Box a {
+  width: auto;
+  padding: 7px;
+  background-color: #e75e8e;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.MPLiveStImg_Box>div::before {
+  content: "Live";
+  padding: 5px 10px;
+  background-color: #e75e8e;
+  border-radius: 30px;
+  position: absolute;
+  top: -380%;
+  right: 8%;
+  color: #fff;
+
+}
+
+.MPLiveStImg_Box:hover>div {
+  opacity: 1;
+}
+
+
+.MPLiveStreamInfo_Container img {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.MPLiveStreamInfo_Container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  padding: 5px 15px;
+  gap: 10px;
+}
+
+.MPLiveStreamInfo_Container h3 {
+  color: #e75e8d;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.MPLiveStreamInfo_Container h2 {
+  color: #fff;
+  font-size: 20px;
+}
+
+.MPLiveSt_Theme {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  gap: 15px;
+  padding: 20px 65px;
+}
+
+.MPLiveSt_Theme h3 {
+  text-decoration: underline;
+  color: #fff;
+  font-size: 24px;
+}
+
+.MPLiveSt_Theme span {
+  text-decoration: none;
+  color: #ec6090;
+  font-size: 25px;
+  font-weight: 700;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+
+}
+
+.MostPopularLiveStream_Container button {
+  padding: 12px 40px;
+  color: #fff;
+  background-color: #e75e8d;
+  font-size: 15px;
+  border-radius: 27px;
+  border: none;
+  margin: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  transform: translateY(25px);
+}
+
+.MostPopularLiveStream_Container button:hover {
+  color: #e75e8d;
+  background-color: #fff;
+}
+
+.TopStr_Info button {
+  padding: 12px 40px;
+  color: #fff;
+  background-color: #e75e8d;
+  font-size: 15px;
+  border-radius: 27px;
+  border: none;
+  margin: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+
+}
+
+.TopStr_Info button:hover {
+  color: #e75e8d;
+  background-color: #fff;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px;
+  gap: 15px;
+}
+
+footer p {
+  color: #fff;
+  font-weight: 300;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+  transition: .5s;
+}
+
+footer a:hover {
+  color: #e75e8d;
+}
+
+@media (min-width:1024px) and (max-width:1200px) {
+  .Logo_Box a {
+    height: 95%;
+
+  }
+
+  .Menu li {
+    padding: 10px 11px;
+  }
+
+  .Search_Box input {
+    padding: 10px 16px 10px 13px;
+    font-size: 14px;
+    border: none;
+  }
+
+  .Search_Box i {
+    left: 8%;
+
+  }
+}
+
+@media (min-width:1024px) and (max-width:1200px) {
+  .Logo_Box a {
+    height: 95%;
+
+  }
+
+  .Menu li {
+    padding: 10px 11px;
+  }
+
+  .Search_Box input {
+    padding: 10px 16px 10px 13px;
+    font-size: 14px;
+    border: none;
+  }
+
+  .Search_Box i {
+    left: 8%;
+
+  }
+}
+
+@media(min-width:320px) and (max-width:1024px) {
+  #main {
+    transform: translateY(23px);
+    padding: 50px 20px;
+  }
+
+  header>div:last-child {
+    display: block;
+    border: none;
+  }
+
+  #Menu_Button i {
+    color: #ec6090;
+    background-color: #fff;
+    padding: 13px 30px;
+    font-size: 20px;
+  }
+
+  header {
+    background-color: #fff;
+    padding: 0;
+  }
+
+  .Menu {
+    position: absolute;
+    top: 100%;
+    height: 0;
+    width: 100%;
+    left: 0;
+    overflow: hidden;
+    transition: .4s;
+    background-color: #fff;
+    z-index: 9999999999;
+    border-top: 1px solid rgba(128, 128, 128, 0.281);
+  }
+
+  .Menu ul {
+    flex-direction: column;
+  }
+
+  .Logo_Box {
+    width: 120px;
+  }
+
+  .Logo_Box a {
+    background-position: center;
+    padding: 10px 20px;
+  }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+  .Search_Box {
+    display: none;
+  }
+
+  .Menu li:last-child a {
+    background-color: #ec60919a;
+    color: white;
+    transition: 0.4s;
+  }
+
+  .Menu li:last-child a:hover {
+    background-color: white;
+    color: #ec6090;
+  }
+
+  #main {
+    padding: 40px 60px;
+  }
+
+  .Slider-Downloads {
+    flex-direction: column;
+  }
+
+  .slider {
+    width: 100%;
+  }
+
+  .slider .slides .Feauture_Ggame {
+    width: 350px;
+    flex: 0 0 50%;
+  }
+
+  .TopStreamers_Container {
+    width: 100%;
+  }
+
+  .FGamesImg_Box {
+    height: 380px;
+  }
+
+  .MPLiveStImg_Box {
+    width: 260px;
+  }
+
+  .MPLiveStImg_Box img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .TopStr_Info {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width:552px) and (max-width:768px) {
+  .Search_Box {
+    display: none;
+  }
+
+  .Menu li:last-child a {
+    background-color: #ec60919a;
+    color: white;
+    transition: 0.4s;
+  }
+
+  .Menu li:last-child a:hover {
+    background-color: white;
+    color: #ec6090;
+  }
+
+  #main {
+    padding: 40px 60px;
+  }
+
+  .Slider-Downloads {
+    flex-direction: column;
+  }
+
+  .slider {
+    width: 100%;
+  }
+
+  .slider .slides .Feauture_Ggame {
+    width: 500px;
+    flex: 0 0 100%;
+  }
+
+  .FGamesImg_Box {
+    height: 434px;
+  }
+
+  .TopStreamers_Container {
+    width: 100%;
+  }
+
+  .MPLiveStImg_Box img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width:320px) and (max-width:552px) {
+  .Search_Box {
+    display: none;
+  }
+
+  .Menu li:last-child a {
+    background-color: #ec60919a;
+    color: white;
+    transition: 0.4s;
+  }
+
+  .Menu li:last-child a:hover {
+    background-color: white;
+    color: #ec6090;
+  }
+
+  main {
+    width: 100%;
+    padding: 40px 20px;
+  }
+
+  .Slider-Downloads {
+    flex-direction: column;
+  }
+
+  .slider {
+    width: 100%;
+  }
+
+  .slider .slides .Feauture_Ggame {
+    width: 500px;
+    flex: 0 0 100%;
+  }
+
+  .FGamesImg_Box {
+    height: 300px;
+  }
+
+  .TopStreamers_Container {
+    width: 100%;
+  }
+
+  .MPLiveStImg_Box {
+    width: 100%;
+  }
+
+  .MPLiveStImg_Box img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .TopStr_Info {
+    flex-direction: column;
+  }
+
+  .TopStr_Info div {
+    width: 100%;
+  }
+
+  .TopStr_Info button {
+    width: 100%;
+  }
+  .MPLiveSt_Theme{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .MPLiveSt_Theme h3{
+    font-size: 20px;
+  }
+  .MPLiveSt_Theme span{
+    font-size: 20px;
+  }
+  footer{
+    padding: 30px 40px;
+    p{
+      text-align: center;
+    }
+  }
+
+}

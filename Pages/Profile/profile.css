@@ -1,0 +1,790 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1f2122;
+  gap: 20px;
+}
+
+
+main {
+  width: 80%;
+  height: auto;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1c1c1d;
+  gap: 50px;
+  border-radius: 20px;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  background-color: #1f2122;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 50px;
+  position: relative;
+}
+
+header>div {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+header>div:last-child{
+  display: none;
+}
+
+.Logo_Box {
+  width: 250px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.Logo_Box a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://templatemo.com/templates/templatemo_579_cyborg_gaming/assets/images/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.Search_Box {
+  width: 200px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.Search_Box i {
+  position: absolute;
+  left: -8%;
+  color: gray;
+}
+
+.Search_Box input {
+  padding: 10px 20px 10px 40px;
+  border-radius: 30px;
+  border: 3px solid gray;
+  outline: none;
+  font-size: 18px;
+  transition: .4s;
+  background-color: rgb(39, 39, 39);
+  color: white;
+}
+
+.Search_Box input:hover {
+  background-color: rgb(49, 49, 49);
+}
+
+.Search_Box input:focus {
+  border-color: #e75e8d;
+}
+
+.Menu {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Menu ul {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.Menu li {
+  padding: 10px 20px;
+  /* background-color: aliceblue; */
+  list-style: none;
+}
+
+.Menu a {
+  display: block;
+  font-size: 15px;
+  text-decoration: none;
+  color: gray;
+  font-weight: 500;
+  transition: 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.Menu li:last-child a {
+  padding: 10px 15px;
+  border-radius: 30px;
+  background-color: #27292a;
+}
+
+.Menu a:hover {
+  color: #e75e8d;
+}
+
+.Menu li:last-child a:hover {
+  background-color: #e75e8d;
+  color: #fff;
+}
+
+.Menu li:last-child img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.StartLiveStream_Cont {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+  background-color: #27292a;
+  gap: 20px;
+  border-radius: 20px;
+
+  &>div {
+    width: 320px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 20px;
+
+    &:first-child {
+      height: 250px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(https://templatemo.com/templates/templatemo_579_cyborg_gaming/assets/images/profile.jpg);
+    }
+
+    &:last-child {
+      background-color: #1f2122;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &>div {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #666;
+        padding: 13px 10px;
+
+        span {
+
+          &:first-child {
+            color: #666;
+          }
+
+          &:last-child {
+            color: #e75e8d;
+          }
+        }
+      }
+    }
+  }
+}
+
+.StartLiveStream_Cont>div>div:last-child {
+  border: none;
+}
+
+.StartLiveStream_Cont>div>span {
+  color: #fff;
+  background-color: #e75e8d;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.StartLiveStream_Cont>div>h2 {
+  color: #fff;
+  font-weight: 700;
+}
+
+.StartLiveStream_Cont>div>p {
+  color: #666;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.StartLiveStream_Cont>div>button {
+  padding: 12px 20px;
+  color: #e75e8d;
+  background-color: #27292a;
+  font-size: 15px;
+  border-radius: 27px;
+  border: solid 1px #e75e8d;
+  margin: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.StartLiveStream_Cont>div>button:hover {
+  background-color: #fff;
+  border: 1px solid transparent;
+}
+
+hr {
+  width: 100%;
+  border-color: #666;
+}
+
+.MostPopularClips_Container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.MostPopularClipsBtn_Box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.MostPopularClips_Box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px 0;
+}
+
+.YMostPopularClips_Elem {
+  width: 220px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 15px 30px 15px;
+  gap: 20px;
+  background-color: #27292a;
+  border-radius: 25px;
+}
+
+.MostPopularClips_Info {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.MostPopularClips_Info h3 {
+  font-weight: 700;
+  color: #fff;
+}
+
+.MostPopularClips_Info i {
+  color: #e75e8d;
+}
+
+.MostPopularClips_Info span {
+  color: #fff;
+}
+
+.YMPopularClipsImg_Box a {
+  width: 40px;
+  height: 40px;
+  padding: 10px 20px;
+  background-color: #ffffffbe;
+  color: #e75e8d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.YMPopularClipsImg_Box {
+  width: 100%;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.YMPopularClipsImg_Box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.MostPC_Theme {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  font-size: 25px;
+  padding: 15px 0;
+}
+
+.MostPC_Theme span {
+  text-decoration: none;
+  color: #ec6090;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.MostPC_Theme h2 {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.MostPopularClips_Container button {
+  padding: 10px 30px;
+  background-color: #e75e8d;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 27px;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.MostPopularClips_Container button:hover {
+  color: #e75e8d;
+  background-color: #fff;
+}
+
+.Library_Container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1f2122;
+  padding: 40px;
+  gap: 20px;
+  border-radius: 15px;
+}
+
+.LibraryText_Box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  font-size: 25px;
+}
+
+.LibraryText_Box h2 {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.LibraryText_Box span {
+  text-decoration: none;
+  color: #ec6090;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.Library_Container>div>button {
+  padding: 12px 30px;
+  color: #fff;
+  background-color: #e75e8d;
+  font-size: 15px;
+  border-radius: 27px;
+  border: none;
+  margin: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  transform: translateY(65px);
+}
+
+.Library_Container>div>button:hover {
+  color: #e75e8d;
+  background-color: #fff;
+}
+
+
+.Library_Box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.Library {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.096);
+  padding: 20px 0;
+}
+
+.Library_Img_Box {
+  width: 95px;
+  height: 85px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.Library_Img_Box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Library button {
+  padding: 15px 40px;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #666;
+  border: 1px solid #666;
+  background: transparent;
+  transition: .5s;
+}
+
+.LibraryArea_Info {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.LibraryArea_Info h4 {
+  color: #fff;
+}
+
+.LibraryArea_Info h5 {
+  color: #666;
+}
+
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px;
+  gap: 15px;
+}
+
+footer p {
+  color: #fff;
+  font-weight: 300;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+  transition: .5s;
+}
+
+footer a:hover {
+  color: #e75e8d;
+}
+
+@media (min-width:1024px) and (max-width:1200px) {
+  .Logo_Box a {
+    height: 95%;
+
+  }
+
+  .Menu li {
+    padding: 10px 11px;
+  }
+
+  .Search_Box input {
+    padding: 10px 16px 10px 13px;
+    font-size: 14px;
+    border: none;
+  }
+
+  .Search_Box i {
+    left: 8%;
+
+  }
+}
+
+
+
+@media (min-width:768px) and (max-width:1024px) {
+  .Menu li:last-child a {
+    background-color: #ec60919a;
+    color: white;
+    transition: 0.4s;
+  }
+
+  .Menu li:last-child a:hover {
+    background-color: white;
+    color: #ec6090;
+  }
+
+  .MostPopularClips_Box {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .StartLiveStream_Cont {
+    flex-wrap: wrap;
+
+    &>div {
+      width: 220px;
+      &:last-child {
+        flex: 3;
+      }
+    }
+  }
+  .LibraryArea_Info {
+    flex-wrap: wrap;
+}
+
+.Library_Container {
+    width: 100%;
+    padding: 15px;
+}
+.LibraryText_Box h2 {
+  font-size: 30px;
+}
+
+.LibraryText_Box span {
+  font-size: 35px;
+}
+}
+
+@media (min-width:552px) and (max-width:768px) {
+  .Menu li:last-child a {
+    background-color: #ec60919a;
+    color: white;
+    transition: 0.4s;
+  }
+
+  .Menu li:last-child a:hover {
+    background-color: white;
+    color: #ec6090;
+  }
+  .MostPopularClips_Box{
+    justify-content: center;
+
+  }
+
+  .StartLiveStream_Cont {
+    flex-wrap: wrap;
+
+    &>div {
+      width: 100%; 
+    }
+  }
+  .Library {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.LibraryArea_Info {
+    flex-wrap: wrap;
+}
+
+.Library_Container {
+    width: 100%;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+.LibraryText_Box h2 {
+  font-size: 30px;
+}
+
+.LibraryText_Box span {
+  font-size: 35px;
+}
+
+}
+
+@media (min-width:320px) and (max-width:552px) {
+  .Menu li:last-child a {
+    background-color: #ec60919a;
+    color: white;
+    transition: 0.4s;
+  }
+
+  .Menu li:last-child a:hover {
+    background-color: white;
+    color: #ec6090;
+  }
+  .StartLiveStream_Cont {
+    flex-wrap: wrap;
+
+    &>div {
+      width: 100%; 
+    }
+  }
+
+  footer {
+    padding: 30px 40px;
+
+    p {
+      text-align: center;
+    }
+  }
+  .Library {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.LibraryArea_Info {
+    flex-wrap: wrap;
+}
+
+.Library_Container {
+    width: 100%;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+.LibraryText_Box h2 {
+  font-size: 30px;
+}
+
+.LibraryText_Box span {
+  font-size: 35px;
+}
+.StartLiveStream_Cont{
+  padding: 10px;
+}
+.MostPopularClips_Box{
+  justify-content: center;
+}
+.MostPC_Theme {
+  justify-content: center;
+}
+.MostPC_Theme h2{
+  font-size: 18px;
+} 
+.MostPC_Theme span {
+font-size: 18px;
+}
+.LibraryText_Box{
+  justify-content: center;
+}
+.LibraryText_Box h2 {
+  font-size: 18px;
+}
+.LibraryText_Box span{
+  font-size: 18px;
+}
+
+}
+
+@media(min-width:320px) and (max-width:1024px) {
+  main {
+    transform: translateY(23px);
+    padding: 50px 20px;
+  }
+
+  header>div:last-child {
+    display: block;
+    border: none;
+  }
+
+  #Menu_Button i {
+    color: #ec6090;
+    background-color: #fff;
+    padding: 13px 30px;
+    font-size: 20px;
+  }
+  .Search_Box{
+    display: none;
+  }
+
+  header {
+    background-color: #fff;
+    padding: 0;
+
+    div {
+      &:nth-child(3) {
+        display: block;
+      }
+    }
+  }
+
+  .Menu {
+    position: absolute;
+    top: 100%;
+    height: 0;
+    width: 100%;
+    left: 0;
+    overflow: hidden;
+    transition: .4s;
+    background-color: #fff;
+    z-index: 9999999999;
+    border-top: 1px solid rgba(128, 128, 128, 0.281);
+  }
+
+  .Menu ul {
+    flex-direction: column;
+  }
+
+  .Logo_Box {
+    width: 120px;
+  }
+
+  .Logo_Box a {
+    background-position: center;
+    padding: 10px 20px;
+  }
+}

@@ -1,0 +1,860 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1f2122;
+  gap: 20px;
+}
+
+main {
+  width: 90%;
+  height: auto;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1c1c1d;
+  gap: 50px;
+  border-radius: 20px;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  background-color: #1f2122;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 50px;
+  position: relative;
+
+  div {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    &:nth-child(3) {
+      display: none;
+    }
+  }
+}
+
+header>div:last-child{
+  display: none;
+}
+
+.Logo_Box {
+  width: 250px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.Logo_Box a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://templatemo.com/templates/templatemo_579_cyborg_gaming/assets/images/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.Search_Box {
+  width: 200px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.Search_Box i {
+  position: absolute;
+  left: -8%;
+  color: gray;
+}
+
+.Search_Box input {
+  padding: 10px 20px 10px 40px;
+  border-radius: 30px;
+  border: 3px solid gray;
+  outline: none;
+  font-size: 18px;
+  transition: .4s;
+  background-color: rgb(39, 39, 39);
+  color: white;
+}
+
+.Search_Box input:hover {
+  background-color: rgb(49, 49, 49);
+}
+
+.Search_Box input:focus {
+  border-color: #e75e8d;
+}
+
+.Menu {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Menu ul {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.Menu li {
+  padding: 10px 20px;
+  list-style: none;
+}
+
+.Menu a {
+  display: block;
+  font-size: 15px;
+  text-decoration: none;
+  color: gray;
+  font-weight: 500;
+  transition: 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.Menu li:last-child a {
+  padding: 10px 15px;
+  border-radius: 30px;
+  background-color: #27292a;
+}
+
+.Menu a:hover {
+  color: #e75e8d;
+}
+
+.Menu li:last-child a:hover {
+  background-color: #e75e8d;
+  color: #fff;
+}
+
+.Menu li:last-child img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.GamesVideo_Area {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #27292a;
+
+  div {
+    width: 600px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+
+
+
+
+
+.GamesVideo_Area a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  position: relative;
+  border-radius: 20px;
+  background-image: url(https://templatemo.com/templates/templatemo_579_cyborg_gaming/assets/images/feature-right.jpg);
+}
+
+.GamesVideo_Area i {
+  background-color: #fff;
+  color: #e75e8d;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+
+.GamesVideo_Theme {
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+}
+
+
+.Fort_NowBox {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.Game_Info_Title {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 0 20px;
+}
+
+.Game_Info_Title>div {
+  width: 500px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 20px;
+  background-color: #27292a;
+  border-radius: 15px;
+}
+
+.Game_Info_Title>div:nth-child(2) {
+  justify-content: center;
+  gap: 60px;
+}
+
+.Game_Info_Title>div>span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  color: white;
+}
+
+.Game_Info_Title>div>span:first-child>i {
+  color: gold;
+}
+
+.Game_Info_Title>div>span:nth-child(2)>i {
+  color: #e75e8d;
+}
+
+.Game_Info_Title>div>span:nth-child(3)>i {
+  color: #e75e8d;
+}
+
+.Game_Info_Title>div>span:last-child>i {
+  color: #e75e8d;
+}
+
+.Game_Info_Title>div>div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Game_Info_Title>div>div>h4 {
+  color: white;
+}
+
+.Game_Info_Title>div>div:first-child>span {
+  color: #666;
+}
+
+.Game_Info_Title>div>div:last-child>span {
+  color: white;
+}
+
+.Game_Info_Title>div>div:last-child>span:first-child>i {
+  color: gold;
+}
+
+.Game_Info_Title>div>div:last-child>span:last-child>i {
+  color: #e75e8d;
+}
+
+.Gallery_Description {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 45px;
+  padding: 20px 0;
+}
+
+.Game_Gallery_Box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.Game_Gallery_Box img {
+  width: 330px;
+  height: 220px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.Gallery_Description>div {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Gallery_Description p {
+  font-size: 18px;
+  text-align: center;
+  line-height: 30px;
+  color: #666;
+}
+
+.Gallery_Description p>a {
+  text-decoration: none;
+  color: white;
+  transition: .4s;
+}
+
+.Gallery_Description p>a:hover {
+  color: #e75e8d;
+}
+
+.Gallery_Description button {
+  width: 100%;
+  display: block;
+  border-radius: 30px;
+  padding: 12px 20px;
+  background: transparent;
+  border: 2px solid #e75e8d;
+  color: #e75e8d;
+  transition: .4s;
+  cursor: pointer;
+}
+
+.Gallery_Description button:hover {
+  background: white;
+  color: #e75e8d;
+  border-color: white;
+}
+
+
+.OthRel_Theme {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 35px;
+}
+
+.OthRel_Theme h2 {
+  color: #fff;
+  text-decoration: underline;
+  font-size: 28px;
+}
+
+.OthRel_Theme span {
+  color: #e75e8d;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.OthRel_Container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #1f2122;
+  padding: 40px;
+  gap: 20px;
+  border-radius: 15px;
+}
+
+.OtherReladetArea_Box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.OthRel_Elem {
+  width: 360px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  background-color: #1c1c1d;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.OtherReladetArea_Box img {
+  width: 80px;
+  height: auto;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.OtherRel_Info_Box {
+  width: 600px;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.OtherRel_Info_Box div {
+  width: 100%;
+
+  h3 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+  }
+}
+
+.OtherRel_Info_Box div:first-child h3 {
+  color: #fff;
+}
+
+.OtherRel_Info_Box>div span:nth-child(2) h3 {
+  color: #666;
+}
+
+.OtherRel_Info_Box div:last-child h3 {
+  color: #fff;
+}
+
+.OtherRel_Info_Box div:first-child i {
+  color: gold;
+}
+
+.OtherRel_Info_Box div:last-child i {
+  color: #e75e8d;
+}
+
+.OtherRel_Info_Box span {
+  color: #fff;
+  font-size: 15px;
+}
+
+.OtherRel_Info_Box div:nth-child(2) span {
+  color: #666;
+}
+
+.OtherRel_Info_Box h3 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 70px;
+  padding: 6px 30px;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px;
+  gap: 15px;
+}
+
+footer p {
+  color: #fff;
+  font-weight: 300;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+  transition: .5s;
+}
+
+footer a:hover {
+  color: #e75e8d;
+}
+
+@media (min-width:1024px) and (max-width:1200px) {
+  .Logo_Box a {
+    height: 95%;
+
+  }
+
+  .Menu li {
+    padding: 10px 11px;
+  }
+
+  .Search_Box input {
+    padding: 10px 16px 10px 13px;
+    font-size: 14px;
+    border: none;
+  }
+
+  .Search_Box i {
+    left: 8%;
+
+  }
+}
+
+@media (min-width:1024px) and (max-width:1200px) {
+  .Logo_Box a {
+    height: 95%;
+
+  }
+
+  .Menu li {
+    padding: 10px 11px;
+  }
+
+  .Search_Box input {
+    padding: 10px 16px 10px 13px;
+    font-size: 14px;
+    border: none;
+  }
+
+  .Search_Box i {
+    left: 8%;
+
+  }
+}
+
+@media(min-width:320px) and (max-width:1024px) {
+  main {
+    transform: translateY(23px);
+    padding: 50px 20px;
+  }
+  .Search_Box{
+    display: none;
+  }
+
+  #Menu_Button {
+    display: block;
+    border: none;
+  }
+
+  #Menu_Button i {
+    color: #ec6090;
+    background-color: #fff;
+    padding: 13px 30px;
+    font-size: 20px;
+  }
+
+  header {
+    background-color: #fff;
+    padding: 0;
+
+    div {
+      &:nth-child(3) {
+        display: block;
+      }
+    }
+  }
+
+  .Menu {
+    position: absolute;
+    top: 100%;
+    height: 0;
+    width: 100%;
+    left: 0;
+    overflow: hidden;
+    transition: .4s;
+    background-color: #fff;
+    z-index: 9999999999;
+    border-top: 1px solid rgba(128, 128, 128, 0.281);
+  }
+
+  .Menu ul {
+    flex-direction: column;
+  }
+
+  .Logo_Box {
+    width: 120px;
+  }
+
+  .Logo_Box a {
+    background-position: center;
+    padding: 10px 20px;
+  }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+  .OthRel_Elem {
+    width: 320px;
+  }
+
+  .Game_Gallery_Box img {
+    width: 200px;
+    flex: 3;
+  }
+
+  .Search_Box {
+    display: none;
+  }
+
+  .Menu li:last-child a {
+    background-color: #ec60919a;
+    color: white;
+    transition: 0.4s;
+  }
+
+  .Menu li:last-child a:hover {
+    background-color: white;
+    color: #ec6090;
+  }
+
+  .GamesVideo_Area {
+    flex-wrap: wrap;
+    padding: 20px 0;
+    height: auto;
+  }
+
+  .GamesVideo_Area img {
+    width: 427px;
+    height: 299px;
+  }
+
+  .Gallery_Description>div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (min-width:552px) and (max-width:768px) {
+
+  .OthRel_Elem {
+    width: 100%;
+  }
+
+  .Game_Gallery_Box img {
+    width: 200px;
+    flex: 3;
+  }
+
+  .Search_Box {
+    display: none;
+  }
+
+  .Menu li:last-child a {
+    background-color: #ec60919a;
+    color: white;
+    transition: 0.4s;
+  }
+
+  .Menu li:last-child a:hover {
+    background-color: white;
+    color: #ec6090;
+  }
+
+  .GamesVideo_Area {
+    flex-wrap: wrap;
+  }
+
+
+
+  .GamesVideo_Area img {
+    width: 427px;
+    height: 299px;
+  }
+
+  .Gallery_Description>div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .Game_Info_Title {
+    flex-wrap: wrap
+  }
+
+  .OthRel_Theme h2 {
+    font-size: 23px;
+  }
+
+  .OthRel_Theme span {
+    font-size: 29px;
+  }
+}
+
+@media (min-width:320px) and (max-width:552px) {
+  main {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .Search_Box {
+    display: none;
+  }
+
+  .Menu li:last-child a {
+    background-color: #ec60919a;
+    color: white;
+    transition: 0.4s;
+  }
+
+  .Menu li:last-child a:hover {
+    background-color: white;
+    color: #ec6090;
+  }
+
+  .GamesVideo_Area {
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+
+  .GamesVideo_Area>div {
+    width: 100%;
+    height: 200px;
+  }
+
+  .Gallery_Description>div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+
+  .Game_Info_Title {
+    flex-wrap: wrap
+  }
+
+  .OthRel_Theme h2 {
+    font-size: 16px;
+  }
+
+  .OthRel_Theme span {
+    font-size: 20px;
+  }
+
+  .OtherReladetArea_Box {
+    gap: 10px;
+  }
+
+  .OtherReladetArea_Box img {
+    width: 140px;
+    height: auto;
+  }
+
+  .OthRel_Elem {
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .OtherRel_Info_Box div {
+    flex-wrap: wrap;
+  }
+
+  .Fort_NowBox {
+    gap: 20px;
+  }
+
+  .Game_Info_Title>div:nth-child(2) {
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .Game_Info_Title>div {
+    padding: 20px;
+    height: auto;
+  }
+
+  .Game_Gallery_Box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .Gallery_Description p {
+    font-size: 11px;
+    text-align: center;
+    line-height: 30px;
+  }
+
+
+  .OtherRel_Info_Box h3 {
+    gap: 10px;
+  }
+
+  .OtherRel_Info_Box span {
+    justify-content: center;
+    align-items: center;
+    font-style: 15px;
+  }
+
+  .OtherRel_Info_Box {
+    width: 100%;
+  }
+  footer{
+    padding: 30px 40px;
+    p{
+      text-align: center;
+    }
+  }
+}
+
